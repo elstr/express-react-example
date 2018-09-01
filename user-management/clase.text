@@ -1,0 +1,43 @@
+0. Instalacion
+npm i -S redux
+npm i -S react-redux
+npm i -S react-router
+
+1. Ruteos con react-router
+2. Definir features
+3. Armar primero los Ruteos rendereando los componentes
+
+
+## Ruteos
+En app vamos a definir nuestros ruteos con react-router
+
+           +---------------------------------------+
+           | Home  ...                             | <- App
+           +--------+------------------------------+
+           |        |                              |
+Options -> | Users  |  Users                       |
+           |        |                              |
+           | Groups |  Boxes inside boxes          |
+           |        |  inside boxes ...            | <- Details
+           |        |                              |
+           |        |                              |
+           |        |                              |
+           |        |                              |
+           +--------+------------------------------+
+
+
+Cuando clickeamos en users mostramos el menu de usuarios
+Cuando clickeamos en groups mostramos el menu de groups
+
+Users
+Lista de usuarios con boton de edicion / borrado
+Button Add new user renderiza 
+    - Input text
+    - Lista de grupos para seleccionar
+    - Boton de Add user
+    
+Groups
+Lista de grupos con boton de edicion / borrado
+Button Add new group renderiza 
+    - Input text
+    - Boton de Add group
